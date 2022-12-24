@@ -1,0 +1,30 @@
+﻿<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <OutputType>WinExe</OutputType>
+    <TargetFramework>net6.0-windows</TargetFramework>
+    <Nullable>enable</Nullable>
+    <UseWindowsForms>true</UseWindowsForms>
+    <ImplicitUsings>enable</ImplicitUsings>
+    <ApplicationIcon>Spectrum_Analyzer.ico</ApplicationIcon>
+    <AssemblyName>$(MSBuildProjectName)</AssemblyName>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <Content Include="Spectrum_Analyzer.ico" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <PackageReference Include="NAudio" Version="2.1.0" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <Reference Include="MyLib">
+      <HintPath>..\..\MyLib\MyLib\bin\Release\netstandard2.0\MyLib.dll</HintPath>
+    </Reference>
+    <Reference Include="MylLib">
+      <HintPath>..\..\MyLib\MylLib\bin\Release\net6.0\MylLib.dll</HintPath>
+    </Reference>
+  </ItemGroup>
+
+</Project>
